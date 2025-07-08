@@ -4,13 +4,13 @@ import { getAllPosts } from '@/lib/getPosts';
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
 
-type Params = {
+type Props = {
   params: {
     slug: string;
   };
 };
 
-export default async function BlogPostPage({ params }: Params) {
+export default async function BlogPostPage({ params }: Props) {
   const post = await getPostBySlug(params.slug);
   const posts = getAllPosts();
 
@@ -30,7 +30,7 @@ export default async function BlogPostPage({ params }: Params) {
                   p.slug === params.slug ? 'font-bold text-black dark:text-white' : ''
                 }`}
               >
-                #{post.id} {post.title}
+                #{p.id} {p.title}
               </Link>
             </li>
           ))}
@@ -48,7 +48,7 @@ export default async function BlogPostPage({ params }: Params) {
 
         <h1 className="text-3xl font-bold">#{post.id} {post.title}</h1>
         <p className="text-sm text-gray-500">
-            {format(new Date(post.date), 'HH:mm dd/MM/yyyy')}
+          {format(new Date(post.date), 'HH:mm dd/MM/yyyy')}
         </p>
 
         <div
