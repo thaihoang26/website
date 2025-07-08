@@ -4,11 +4,13 @@ import { getAllPosts } from '@/lib/getPosts';
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
 
-export default async function BlogPostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+type Params = {
+  params: {
+    slug: string;
+  };
+};
+
+export default async function BlogPostPage({ params }: Params) {
   const post = await getPostBySlug(params.slug);
   const posts = await getAllPosts();
 
