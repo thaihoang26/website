@@ -12,7 +12,7 @@ type Params = {
 
 export default async function ProjectDetailPage({ params }: Params) {
   const project = await getProjectBySlug(params.slug);
-  const allProjects = getAllProjects();
+  const allProjects = await getAllProjects();
 
   if (!project) return notFound();
 

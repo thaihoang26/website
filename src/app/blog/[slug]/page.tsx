@@ -10,7 +10,7 @@ export default async function BlogPostPage({
   params: { slug: string };
 }) {
   const post = await getPostBySlug(params.slug);
-  const posts = getAllPosts();
+  const posts = await getAllPosts();
 
   if (!post) return notFound();
 

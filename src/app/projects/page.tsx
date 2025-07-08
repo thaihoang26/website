@@ -1,8 +1,8 @@
 import { getAllProjects } from '@/lib/getProjects';
 import Link from 'next/link';
 
-export default function ProjectsPage() {
-  const projects = getAllProjects();
+export default async function ProjectsPage() {
+  const projects = await getAllProjects();
 
   const ai = projects.filter((p) => p.category === 'AI');
   const iot = projects.filter((p) => p.category === 'IoT');
