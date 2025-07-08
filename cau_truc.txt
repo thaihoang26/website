@@ -1,0 +1,38 @@
+src/
+├── app/
+│   ├── layout.tsx              # Layout gốc (dùng chung cho toàn bộ site)
+│   ├── page.tsx                # Trang chủ (/)
+│   ├── about/
+│   │   └── page.tsx            # Trang giới thiệu (/about)
+│   ├── blog/
+│   │   ├── page.tsx            # Danh sách blog (/blog)
+│   │   └── [slug]/page.tsx     # Chi tiết từng bài (/blog/ten-bai)
+│   ├── projects/
+│   │   ├── page.tsx            # Danh sách dự án (/projects)
+│   │   └── [slug]/page.tsx     # Chi tiết dự án
+│   ├── contact/
+│   │   └── page.tsx            # Trang liên hệ (/contact)
+│   └── globals.css             # CSS toàn cục
+├── components/
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── ThemeToggle.tsx
+│   └── LanguageSwitcher.tsx
+├── content/
+│   ├── posts/                  # Blog Markdown
+│   │   └── hello-world.md
+│   └── projects/               # Dự án (Markdown hoặc JSON)
+├── lib/
+│   ├── markdown.ts             # Parse markdown
+│   └── getPosts.ts             # Hàm load blog
+├── locales/
+│   ├── en/common.json
+│   └── vi/common.json
+├── types/
+│   ├── post.ts
+│   └── project.ts
+├── config/
+│   └── i18n.ts
+├── tailwind.config.ts
+├── i18n.config.ts             # Cấu hình i18n (nếu dùng next-intl hoặc next-i18next)
+└── utils/                     # Hàm tiện ích
