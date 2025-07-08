@@ -1,10 +1,9 @@
-import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPostBySlug } from '@/lib/markdown';
 import { getAllPosts } from '@/lib/getPosts';
+import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
 
-// 👇 Dùng interface chuẩn, không cần tự tạo Props
 export default async function BlogPostPage({
   params,
 }: {
@@ -17,7 +16,7 @@ export default async function BlogPostPage({
 
   return (
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 mt-8">
-      {/* Sidebar bên trái */}
+      {/* Sidebar */}
       <aside className="md:w-1/4 hidden md:block">
         <h2 className="text-xl font-semibold mb-4">📝 Other Posts</h2>
         <ul className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
@@ -36,7 +35,7 @@ export default async function BlogPostPage({
         </ul>
       </aside>
 
-      {/* Nội dung chính */}
+      {/* Nội dung */}
       <article className="md:w-3/4 space-y-4">
         <Link
           href="/blog"
