@@ -4,13 +4,11 @@ import { getAllPosts } from '@/lib/getPosts';
 import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
 
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
-export default async function BlogPostPage({ params }: Params) {
+export default async function BlogPostPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const post = await getPostBySlug(params.slug);
   const posts = await getAllPosts();
 
@@ -46,7 +44,9 @@ export default async function BlogPostPage({ params }: Params) {
           ← Back to blog
         </Link>
 
-        <h1 className="text-3xl font-bold">#{post.id} {post.title}</h1>
+        <h1 className="text-3xl font-bold">
+          #{post.id} {post.title}
+        </h1>
         <p className="text-sm text-gray-500">
           {format(new Date(post.date), 'HH:mm dd/MM/yyyy')}
         </p>
