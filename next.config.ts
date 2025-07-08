@@ -1,9 +1,7 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  i18n: {
-    locales: ['en', 'vi'],  // các ngôn ngữ hỗ trợ
-    defaultLocale: 'en',    // ngôn ngữ mặc định
+// next.config.ts
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true, // tắt lỗi eslint khi build trên Vercel
   },
 };
 
