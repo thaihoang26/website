@@ -1,16 +1,15 @@
+import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPostBySlug } from '@/lib/markdown';
 import { getAllPosts } from '@/lib/getPosts';
-import { notFound } from 'next/navigation';
 import { format } from 'date-fns';
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
-
-export default async function BlogPostPage({ params }: Props) {
+// 👇 Dùng interface chuẩn, không cần tự tạo Props
+export default async function BlogPostPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const post = await getPostBySlug(params.slug);
   const posts = getAllPosts();
 
