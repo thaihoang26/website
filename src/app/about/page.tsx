@@ -5,7 +5,7 @@ export default function AboutPage() {
 
       {/* WHO */}
       <div>
-        <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">👤 Who am I?</h2>
+        <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">Who am I?</h2>
         <p className="mt-2 text-gray-700 dark:text-gray-300">
           My name is Thai Hoang.        
           I’m deeply passionate about science, technology, and how they can be combined to create smart, real-world systems.
