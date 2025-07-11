@@ -18,7 +18,7 @@ export default function ContactPage() {
 
       <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
         <p className="text-md">
-          📧 <span className="font-mono select-all">thaihoang@example.com</span>
+          📧 <span className="font-mono select-all">electron16s19@gmail.com</span>
         </p>
       </div>
 
@@ -27,7 +27,7 @@ export default function ContactPage() {
       </p>
 
       <Link
-        href="https://github.com/yourusername/your-portfolio"
+        href="https://github.com/thaihoang26/website"
         target="_blank"
         className="inline-block text-blue-600 dark:text-blue-400 underline hover:text-blue-800"
       >

@@ -12,9 +12,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body className="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white transition-colors">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
-          <Footer />
+          {/* Wrapper để xử lý layout */}
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1 max-w-6xl mx-auto px-4 py-8">{children}</main>
+            <Footer />
+          </div>
         </ThemeProvider>
 
         {/* Umami analytics script */}
