@@ -7,10 +7,12 @@ import { format } from 'date-fns';
 export default async function BlogPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = await getPostBySlug(params.slug);
-  const posts = await getAllPosts();
+  const { slug } = await params;
+
+  const post = await getPostBySlug(slug);
+  const posts = getAllPosts();
 
   if (!post) return notFound();
 
@@ -20,12 +22,12 @@ export default async function BlogPostPage({
       <aside className="md:w-1/4 hidden md:block">
         <h2 className="text-xl font-semibold mb-4">📝 Other Posts</h2>
         <ul className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
-          {posts.map((p) => (
+          {(await posts).map((p) => (
             <li key={p.slug}>
               <Link
                 href={`/blog/${p.slug}`}
                 className={`hover:underline ${
-                  p.slug === params.slug ? 'font-bold text-black dark:text-white' : ''
+                  p.slug === slug ? 'font-bold text-black dark:text-white' : ''
                 }`}
               >
                 #{p.id} {p.title}
