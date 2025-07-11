@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/getPosts';
 import { format } from 'date-fns';
+import { ArrowRight } from 'lucide-react';
 
 export default async function BlogPage() {
   const posts = await getAllPosts();
@@ -14,6 +15,7 @@ export default async function BlogPage() {
             <Link href={`/blog/${post.slug}`} className="block group">
               <h2 className="text-2xl font-semibold group-hover:text-blue-600 transition">
                 #{post.id} {post.title}
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </h2>
               <p className="text-sm text-gray-500">
                 {format(new Date(post.date), 'HH:mm dd/MM/yyyy')}
