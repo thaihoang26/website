@@ -8,7 +8,7 @@ export default function AboutPage() {
         <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">Who am I?</h2>
         <p className="mt-2 text-gray-700 dark:text-gray-300">
           My name is Thai Hoang.        
-          I’m deeply passionate about science, technology, and how they can be combined to create smart, real-world systems.
+          I’m deeply passionate about science,, technology, and how they can be combined to create smart, real-world systems.
         </p>
       </div>
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
         <h2 className="text-xl font-semibold text-blue-600 dark:text-blue-400">How do I work & learn?</h2>
         <p className="mt-2 text-gray-700 dark:text-gray-300">
           I follow a project-based approach: from setting a goal → learning theory → experimenting → building → testing → documenting.
-          Most of my projects are shared openly, and I love combining microcontrollers, sensors, machine learning models, and even custom digital logic.
+          Most of my projects are shared openly.
         </p>
       </div>
     </section>
