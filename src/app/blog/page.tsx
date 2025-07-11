@@ -13,7 +13,7 @@ export default async function BlogPage() {
         {(await posts).map((post) => (
           <li key={post.slug}>
             <Link href={`/blog/${post.slug}`} className="block group">
-              <h2 className="text-2xl font-semibold group-hover:text-blue-600 transition">
+              <h2 className="flex items-center text-2xl font-semibold group-hover:text-blue-600 transition">
                 #{post.id} {post.title}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </h2>
