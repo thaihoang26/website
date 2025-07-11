@@ -2,7 +2,20 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Before running the app, make sure to set up your environment variables.
+### 1. Set up `.env.local`
+
+Copy the example environment file:
+
+```bash
+cp .env.example .env.local
+
+Then, update the variables inside .env.local:
+
+NEXT_PUBLIC_UMAMI_WEBSITE_ID=your-umami-website-id
+
+
+### 2. Run the development server
 
 ```bash
 npm run dev
