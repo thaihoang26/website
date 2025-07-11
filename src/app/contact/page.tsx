@@ -23,7 +23,7 @@ export default function ContactPage() {
       </div>
 
       <p className="text-lg">
-        View the source code of this website:
+        Like this website? Check out its source code here if you want to build something similar:
       </p>
 
       <Link
