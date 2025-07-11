@@ -4,19 +4,19 @@ import { getProjectBySlug } from '@/lib/projectMarkdown';
 import { getAllProjects } from '@/lib/getProjects';
 import { format } from 'date-fns';
 
-type Params = {
-  params: {
-    slug: string;
-  };
-};
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
-export default async function ProjectDetailPage({ params }: Params) {
-  const project = await getProjectBySlug(params.slug);
+  const project = await getProjectBySlug(await (await params).slug);
   const allProjects = await getAllProjects();
 
   if (!project) return notFound();
 
-  const currentSlug = params.slug; // ✅ sửa lỗi sync param
+  const currentSlug = slug;
 
   return (
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 mt-8">
