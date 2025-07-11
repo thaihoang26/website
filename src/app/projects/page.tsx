@@ -10,13 +10,13 @@ export default async function ProjectsPage() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">🚀 Projects</h1>
+      <h1 className="text-3xl font-bold mb-8">Projects</h1>
 
       <div className="grid md:grid-cols-3 gap-8">
         {/* AI */}
         <div>
           <h2 className="text-xl font-semibold text-purple-600 dark:text-purple-400 flex items-center gap-2 mb-4">
-            🤖 AI
+            AI
           </h2>
           <ul className="space-y-4">
             {ai.map((p) => (
@@ -36,7 +36,7 @@ export default async function ProjectsPage() {
         {/* IoT */}
         <div>
           <h2 className="text-xl font-semibold text-green-600 dark:text-green-400 flex items-center gap-2 mb-4">
-            📡 IoT / Embedded
+            IoT / Embedded
           </h2>
           <ul className="space-y-4">
             {iot.map((p) => (
@@ -56,7 +56,7 @@ export default async function ProjectsPage() {
         {/* FPGA */}
         <div>
           <h2 className="text-xl font-semibold text-orange-600 dark:text-orange-400 flex items-center gap-2 mb-4">
-            💻  FPGA / ASIC
+            FPGA / ASIC
           </h2>
           <ul className="space-y-4">
             {fpga.map((p) => (

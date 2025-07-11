@@ -21,11 +21,11 @@ export default async function BlogPostPage({
   return (
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 mt-8">
       <aside className="md:w-1/4 hidden md:block">
-        <h2 className="text-xl font-semibold mb-4">📂 Other Projects</h2>
+        <h2 className="text-xl font-semibold mb-4">Other Projects</h2>
 
         {/* AI group */}
         <div className="mb-4">
-          <h3 className="text-sm font-semibold text-purple-600 dark:text-purple-400 mb-1">🤖 AI</h3>
+          <h3 className="text-sm font-semibold text-purple-600 dark:text-purple-400 mb-1">AI</h3>
           <ul className="space-y-1 text-sm">
             {allProjects
               .filter((p) => p.category === 'AI')
@@ -48,7 +48,7 @@ export default async function BlogPostPage({
 
         {/* IoT group */}
         <div className="mb-4">
-          <h3 className="text-sm font-semibold text-green-600 dark:text-green-400 mb-1">📡 IoT / Embedded</h3>
+          <h3 className="text-sm font-semibold text-green-600 dark:text-green-400 mb-1">IoT / Embedded</h3>
           <ul className="space-y-1 text-sm">
             {allProjects
               .filter((p) => p.category === 'IoT')
@@ -71,7 +71,7 @@ export default async function BlogPostPage({
 
         {/* FPGA group */}
         <div>
-          <h3 className="text-sm font-semibold text-orange-600 dark:text-orange-400 mb-1">🧠 FPGA / ASIC</h3>
+          <h3 className="text-sm font-semibold text-orange-600 dark:text-orange-400 mb-1">FPGA / ASIC</h3>
           <ul className="space-y-1 text-sm">
             {allProjects
               .filter((p) => p.category === 'FPGA')

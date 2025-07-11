@@ -8,7 +8,7 @@ export default function HomePage() {
     <section className="space-y-12">
       {/* Phần mở đầu */}
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold">Hi, I'm Thai Hoang 👋</h1>
+        <h1 className="text-4xl font-bold">Hi, I'm Thai Hoang</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
           Exploring the full stack from intelligent algorithms to embedded systems, and all the way down to custom hardware.
         </p>
@@ -24,7 +24,7 @@ export default function HomePage() {
           className="rounded-lg shadow-md"
         />
         <div>
-          <h2 className="text-2xl font-semibold">🤖 AI & Machine Learning</h2>
+          <h2 className="text-2xl font-semibold">AI & Machine Learning</h2>
           <p className="text-gray-700 dark:text-gray-300 mt-2">
             Starting from intelligent algorithms: Linear Regression, Object Detection, Model Training using Python, Scikit-learn, and TensorFlow.
             AI is the brain that powers smart decisions in real-world applications.
@@ -42,7 +42,7 @@ export default function HomePage() {
           className="rounded-lg shadow-md"
         />
         <div>
-          <h2 className="text-2xl font-semibold">📡 Embedded & IoT</h2>
+          <h2 className="text-2xl font-semibold">Embedded & IoT</h2>
           <p className="text-gray-700 dark:text-gray-300 mt-2">
             Deploying AI models on microcontrollers, peripheral devices, interacting with sensors and real-time systems.
             This is where the AI gets connected to the physical world.
@@ -60,7 +60,7 @@ export default function HomePage() {
           className="rounded-lg shadow-md"
         />
         <div>
-          <h2 className="text-2xl font-semibold">💻 FPGA & ASIC Design</h2>
+          <h2 className="text-2xl font-semibold">FPGA & ASIC Design</h2>
           <p className="text-gray-700 dark:text-gray-300 mt-2">
             Going deeper into the hardware: designing digital logic using Verilog, synthesizing to FPGA boards, and eventually learning how to build custom ICs (ASIC) for ultimate optimization and performance.
           </p>

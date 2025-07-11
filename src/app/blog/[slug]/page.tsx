@@ -20,7 +20,7 @@ export default async function BlogPostPage({
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-8 mt-8">
       {/* Sidebar */}
       <aside className="md:w-1/4 hidden md:block">
-        <h2 className="text-xl font-semibold mb-4">📝 Other Posts</h2>
+        <h2 className="text-xl font-semibold mb-4">Other Posts</h2>
         <ul className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
           {(await posts).map((p) => (
             <li key={p.slug}>

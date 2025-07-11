@@ -8,7 +8,7 @@ export default async function BlogPage() {
 
   return (
     <section className="max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">📝 Blog</h1>
+      <h1 className="text-3xl font-bold mb-6">Blog</h1>
       <ul className="space-y-6">
         {(await posts).map((post) => (
           <li key={post.slug}>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-12 space-y-8">
-      <h1 className="text-3xl font-bold">📫 Contact Me</h1>
+      <h1 className="text-3xl font-bold">Contact Me</h1>
 
       <p className="text-lg">
         If you'd like to reach out, feel free to send an email:
@@ -18,7 +18,7 @@ export default function ContactPage() {
 
       <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
         <p className="text-md">
-          📧 <span className="font-mono select-all">electron16s19@gmail.com</span>
+          <span className="font-mono select-all">electron16s19@gmail.com</span>
         </p>
       </div>
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
         target="_blank"
         className="inline-block text-blue-600 dark:text-blue-400 underline hover:text-blue-800"
       >
-        🔗 GitHub Repository
+        GitHub Repository
       </Link>
     </section>
   );
