@@ -56,7 +56,7 @@ export default async function ProjectsPage() {
         {/* FPGA */}
         <div>
           <h2 className="text-xl font-semibold text-orange-600 dark:text-orange-400 flex items-center gap-2 mb-4">
-            FPGA / ASIC
+            IC Design – FPGA & ASIC
           </h2>
           <ul className="space-y-4">
             {fpga.map((p) => (

@@ -69,9 +69,9 @@ export default async function BlogPostPage({
           </ul>
         </div>
 
-        {/* FPGA group */}
+        {/* IC group */}
         <div>
-          <h3 className="text-sm font-semibold text-orange-600 dark:text-orange-400 mb-1">FPGA / ASIC</h3>
+          <h3 className="text-sm font-semibold text-orange-600 dark:text-orange-400 mb-1">IC Design – FPGA & ASIC</h3>
           <ul className="space-y-1 text-sm">
             {allProjects
               .filter((p) => p.category === 'FPGA')

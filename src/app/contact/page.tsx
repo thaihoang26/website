@@ -13,7 +13,7 @@ export default function ContactPage() {
       <h1 className="text-3xl font-bold">Contact Me</h1>
 
       <p className="text-lg">
-        If you'd like to reach out, feel free to send an email:
+        Email lỏ của toi:
       </p>
 
       <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
@@ -23,7 +23,7 @@ export default function ContactPage() {
       </div>
 
       <p className="text-lg">
-        Like this website? Check out its source code here if you want to build something similar:
+        Nếu bạn thích web này và muốn tự làm một cái tương tự, bạn có thể tham khảo mã nguồn ở link GitHub dưới đây (hoặc click vào icon con mèo đen góc phải màn hình ^^):
       </p>
 
       <Link
